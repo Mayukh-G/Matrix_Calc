@@ -8,9 +8,9 @@ SUPP_Y = 876.9  # kN
 SUPP_X = 0
 
 m = Mat([
-    [1, 0, 0, 8],
-    [0, 0, 1, 7],
-    [3, 3, 0, 9]
+    [1, X_F, 0],
+    [0, Y_F, SUPP_Y],
+    [1, 3, 4]
 ])
 m.row_reduce(show_steps=True)
 print(m)

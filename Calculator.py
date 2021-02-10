@@ -16,7 +16,7 @@ class Mat:
 
     def __simplify(self, row_n, pivot_coord):
         div = self.matrix[row_n][pivot_coord]
-        for i in range(self.rows + 1):
+        for i in range(self.columns):
             self.matrix[row_n][i] /= div
 
     def __eliminate(self, main_r, pivot_coord):
